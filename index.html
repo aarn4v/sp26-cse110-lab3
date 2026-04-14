@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meeting minutes for the Team 7 Kickoff of the AI Slot Machine project.">
+    <link rel="icon" href="https://via.placeholder.com/16" type="image/png">
+    <title>Team 7 Kickoff Minutes</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>Pied Piper: Team 7 Kickoff</h1>
+      <h2>Tuesday, April 12, 2026</h2>
+      <h3>Location: Zoom / Hybrid</h3>
+      <nav>
+        <a href="#attendance">Attendance</a> |
+        <a href="#agenda">Agenda</a> |
+        <a href="#media">Media</a> |
+        <a href="#run-entry">Run Entry</a>
+      </nav>
+    </header>
+
+    <hr>
+
+    <main>
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <details>
+          <summary>View Team Roster</summary>
+          <ul>
+            <li>Ethan Carter (Eatyboy)</li>
+            <li>Aarnav Gujjari (aarn4v)</li>
+            <li>Johnny Huang (just0johnny)</li>
+            <li>Kareem Nabulsi (Lumen98)</li>
+            <li>Cindy Zhang (ciz003)</li>
+            <li>Nhan Tri Danh (dnhan1707)</li>
+            <li>Benny Signer (b-signer)</li>
+            <li>Gabrielle Wang (gaw004)</li>
+            <li>Thy Doan (thyndoan)</li>
+            <li>Bishal Khatri (BishalKhatri1)</li>
+            <li>Theo Lee (TheoLee021)</li>
+            <li>Michael Marras - Absent</li>
+          </ul>
+        </details>
+      </section>
+
+      <section id="links">
+        <h2>Useful Links</h2>
+        <p>Please bookmark the following <em>essential</em> repositories:</p>
+        <ul>
+          <li><a href="https://github.com/cse110-sp26-group7">GitHub Organization</a></li>
+          <li><a href="https://github.com/cse110-sp26-group7/cse110-sp26-group7">Main Team Repo</a></li>
+        </ul>
+      </section>
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <div>
+          <h3>Team Brand</h3>
+          <p>Team Name: Pied Piper</p>
+          <p>Colors: Green</p>
+          <p>Font: <i>IBM Plex Sans</i></p>
+        </div>
+
+        <div>
+          <h3>AI Slot Casino</h3>
+          <p>Doing it asynchronously and in parallel.</p>
+          <ol>
+            <li>Set up Github repo (Kareem).</li>
+            <li>Establish the Rubric (Aarnav & Cindy).</li>
+            <li>Run 5 clean sessions per person. (Everyone)</li>
+            <li>Aggregate data into the master CSV (Ethan).</li>
+            <li>Draft refinement prompt. (Michael & Johnny)</li>
+            <li>Write final report. (Benny)</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="media">
+        <h2>Team Meeting Media</h2>
+        <h3>Logo Creation</h3>
+        <img src="piedPiperLogo.png" alt="Pied Piper Logo">
+        
+        <h3>Audio Recording</h3>
+        <p>Team Video Audio</p>
+        <audio controls src="teamintro.mp3">
+          Your browser does not support the audio element.
+        </audio>
+
+        <h3>Team Video</h3>
+        <video width="320" height="240" controls src="teamintro.mov">
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section id="run-entry">
+        <hr>
+        <h3>New Candidate Run Entry</h3>
+        <form>
+          <fieldset>
+            <legend>Log Run Info</legend>
+            
+            <label for="cand-id">Candidate ID:</label>
+            <input type="text" id="cand-id" name="cand-id" placeholder="e.g. candidate-016"><br><br>
+
+            <label for="run-date">Run Date:</label>
+            <input type="date" id="run-date" name="run-date"><br><br>
+
+            <input type="checkbox" id="clean-session" name="clean-session">
+            <label for="clean-session">Ran in browser?</label><br>
+
+            <p>Model:</p>
+            <input type="radio" id="haiku" name="model" value="haiku">
+            <label for="haiku">Claude Haiku 4.5</label>
+            <input type="radio" id="sonnet" name="model" value="sonnet">
+            <label for="sonnet">Claude Sonnet 3.7</label><br><br>
+
+            <label for="error-tag">Primary Error Tag:</label>
+            <input list="common-errors" id="error-tag" name="error-tag">
+            <datalist id="common-errors">
+              <option value="Infinite Loop">
+              <option value="Broken CSS">
+              <option value="Would not Render">
+              <option value="Incorrect Logic">
+            </datalist><br><br>
+
+            <label for="priority">Execution Level:</label>
+            <select id="priority" name="priority">
+              <option value="low">Low - Exploratory</option>
+              <option value="med">Medium - Standard</option>
+              <option value="high">High - Potential Top 5</option>
+            </select><br><br>
+
+            <label for="notes">Quality Observations:</label><br>
+            <textarea id="notes" name="notes" rows="4" cols="50">Enter notes on code quality or drift here...</textarea><br><br>
+
+            <button type="submit">Submit Run to CSV</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+
+  </body>
+</html>
