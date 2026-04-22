@@ -55,3 +55,28 @@ h1, h3 {
 #attendance {
   background-color: color-mix(in srgb, white 90%, green 10%);
 }
+
+/* --- DISPLAY PROPERTIES --- */
+hr { display: none; }
+main { display: block; }
+nav a { display: inline-block; }
+
+/* --- FLEXBOX LAYOUT --- */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  height: 40px;
+}
+
+/* --- GRID LAYOUT --- */
+#attendance ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 5px;
+  column-gap: 10px;
+}
