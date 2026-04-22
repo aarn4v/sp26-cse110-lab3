@@ -80,3 +80,36 @@ nav {
   row-gap: 5px;
   column-gap: 10px;
 }
+
+/* --- COMBINATORS --- */
+header > h1 { color: darkgreen; }
+main section { box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+label + input { margin-left: 5px; }
+h2 ~ div { padding-left: 10px; }
+
+/* --- ATTRIBUTE SELECTOR & PSEUDO-CLASSES --- */
+input[type="text"] { border: 1px solid gray; }
+nav a:hover { color: orange; font-weight: bold; }
+nav a:active { color: red; }
+
+/* --- MODERN SELECTORS (2023) --- */
+section:has(form) {
+  border: 2px solid darkred;
+}
+
+#agenda {
+  & h3 {
+    color: purple;
+  }
+}
+
+/* --- RESPONSIVENESS (MEDIA QUERY) --- */
+@media (max-width: 600px) {
+  #attendance ul {
+    grid-template-columns: 1fr;
+  }
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+}
