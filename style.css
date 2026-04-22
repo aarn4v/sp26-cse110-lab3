@@ -1,0 +1,57 @@
+/* --- VARIABLES & FALLBACKS --- */
+:root {
+  --primary-text: #222222;
+}
+
+/* --- UNIVERSAL SELECTOR --- */
+* {
+  box-sizing: border-box;
+}
+
+/* --- ELEMENT SELECTOR --- */
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--primary-text, black);
+  background-color: rgb(250, 250, 250);
+  margin: auto;
+}
+
+/* --- POSITIONING & SHORT/LONG BOX MODEL --- */
+header {
+  position: sticky;
+  top: 0;
+  margin-top: 0.1in;
+  margin-bottom: 10pt;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 2vh 5% 1rem 5%;
+  border-bottom: 3px solid green;
+}
+
+section {
+  position: relative;
+  margin: 20px auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: hsl(120, 50%, 70%);
+  border-radius: 8px;
+}
+
+/* --- SELECTOR LIST --- */
+h1, h3 {
+  text-align: center;
+}
+
+/* --- CLASS SELECTOR --- */
+.resource-section {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* --- ID SELECTOR --- */
+#attendance {
+  background-color: color-mix(in srgb, white 90%, green 10%);
+}
