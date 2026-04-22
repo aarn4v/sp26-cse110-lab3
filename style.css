@@ -18,8 +18,6 @@ body {
 
 /* --- POSITIONING & SHORT/LONG BOX MODEL --- */
 header {
-  position: sticky;
-  top: 0;
   margin-top: 0.1in;
   margin-bottom: 10pt;
   margin-left: 0px;
@@ -112,4 +110,14 @@ section:has(form) {
     flex-direction: column;
     height: auto;
   }
+}
+
+/* --- NEW STICKY ELEMENT --- */
+section h2 {
+  position: sticky;
+  top: 0;
+  background-color: rgb(250, 250, 250); /* Matches the body background so text doesn't overlap */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 10;
 }
